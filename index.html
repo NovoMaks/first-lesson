@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Мое портфолио</title>
+
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Иван Иванов</h1>
+
+            <p class="title">Веб-разработчик</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Показать контакты</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:ivan@example.com" class="contact-link">ivan@example.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Телефон</p>
+
+                <a href="tel:+79999999999" class="contact-link">+7 (999) 999-99-99</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Дата рождения</p>
+
+                <time datetime="1982-06-23">01.01.2005</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Локация</p>
+
+                <address>Москва</address>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#about" data-nav-link>Обо мне</a>
+            </li>
+
+            <li class="navbar-item">
+              <a class="navbar-link" href="#resume" data-nav-link>Знания</a>
+            </li>
+
+            <li class="navbar-item">
+              <a class="navbar-link" href="#portfolio" data-nav-link>Портфолио</a>
+            </li>
+
+            <li class="navbar-item">
+              <a class="navbar-link" href="#blog" data-nav-link>Блог</a>
+            </li>
+          </ul>
+        </nav>
+
+        <article>
+          <div class="about" id="about">
+            <header>
+              <h2 class="h2 article-title">Обо мне</h2>
+            </header>
+
+            <section class="about-text">
+              <p>
+                Привет! Я начинающий веб-разработчик. Несмотря на юный возраст, я уже успел пройти
+                несколько курсов по веб-разработке и активно применяю полученные знания на практике.
+              </p>
+              <p>
+                Мне безумно нравится программировать, особенно создавать что-то новое и полезное.
+                Каждый день я учусь чему-то новому: изучение HTML, CSS, JavaScript, работа с
+                фреймворками и библиотеками.
+              </p>
+              <p>
+                Я верю, что возраст — не преграда для достижения целей, и стремлюсь развиваться в
+                сфере IT, чтобы в будущем создавать крутые веб-проекты. Если у вас есть идеи или
+                проекты, которые вы хотите реализовать, — давайте работать вместе!
+              </p>
+              <p>Пишите мне, буду рад сотрудничеству и новым вызовам! 🚀</p>
+            </section>
+
+            <section class="service">
+              <h3 class="h3 service-title">Что я умею</h3>
+
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Веб-разработка</h4>
+
+                    <p class="service-item-text">
+                      Разрабатываю веб-проекты на HTML, CSS, JavaScript
+                    </p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/icon-design.svg
+                "
+                      alt="design icon"
+                      width="40"
+                    />
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Веб-дизайн</h4>
+
+                    <p class="service-item-text">
+                      Умею работать с Figma и создавать отзывчивые и удобные интерфейсы.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="resume" id="resume">
+            <header>
+              <h2 class="h2 article-title">Знания</h2>
+            </header>
+            <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3">Образование</h3>
+              </div>
+
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Обучение в школе</h4>
+
+                  <span>2010 — настоящее время</span>
+
+                  <p class="timeline-text">Учусь в школе на 4 и 5</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Обучение на веб-разработчика</h4>
+
+                  <span>2022</span>
+
+                  <p class="timeline-text">Обучение в Novo School</p>
+                </li>
+              </ol>
+            </section>
+
+            <section class="skill">
+              <h3 class="h3 skills-title">Навыки</h3>
+
+              <ul class="skills-list content-card">
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">HTML/CSS</h5>
+                    <data value="80">40%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 40%"></div>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">JS</h5>
+                    <data value="70">30%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 30%"></div>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Figma</h5>
+                    <data value="90">30%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 30%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="portfolio" id="portfolio">
+            <header>
+              <h2 class="h2 article-title">Портфолио</h2>
+            </header>
+
+            <section class="projects">
+              <ul class="project-list">
+                <li class="project-item" data-category="web development">
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
+                    </figure>
+
+                    <h3 class="project-title">Финансы</h3>
+
+                    <p class="project-category">Веб-разработка</p>
+                  </a>
+                </li>
+
+                <li class="project-item">
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
+                    </figure>
+
+                    <h3 class="project-title">Orizon</h3>
+
+                    <p class="project-category">Веб-разработка</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="blog" id="blog">
+            <header>
+              <h2 class="h2 article-title">Блог</h2>
+            </header>
+
+            <section class="blog-posts">
+              <ul class="blog-posts-list">
+                <li class="blog-post-item">
+                  <a href="#">
+                    <figure class="blog-banner-box">
+                      <img
+                        src="./assets/images/blog-1.jpg"
+                        alt="Design conferences in 2022"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <div class="blog-content">
+                      <div class="blog-meta">
+                        <p class="blog-category">Веб-разработка</p>
+
+                        <span class="dot"></span>
+
+                        <time datetime="2022-02-23">23.08.2024</time>
+                      </div>
+
+                      <h3 class="h3 blog-item-title">Верстка карточки</h3>
+
+                      <p class="blog-text">
+                        Используем html5 и css3 для создания эффектных карточек.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
